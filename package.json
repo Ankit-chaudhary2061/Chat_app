@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankit-chaudhary2061/Chat_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankit-chaudhary2061/Chat_app/issues"
+  },
+  "homepage": "https://github.com/Ankit-chaudhary2061/Chat_app#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
