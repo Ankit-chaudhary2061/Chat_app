@@ -1,0 +1,84 @@
+// {
+//   // Visit https://aka.ms/tsconfig to read more about this file
+//   "compilerOptions": {
+//     // File Layout
+//     // "rootDir": "./src",
+//     // "outDir": "./dist",
+
+//     // Environment Settings
+//     // See also https://aka.ms/tsconfig/module
+//     "module": "nodenext",
+//     "target": "esnext",
+//     "types": [],
+//     // For nodejs:
+//     // "lib": ["esnext"],
+//     // "types": ["node"],
+//     // and npm install -D @types/node
+
+//     // Other Outputs
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+
+//     // Stricter Typechecking Options
+//     "noUncheckedIndexedAccess": true,
+//     "exactOptionalPropertyTypes": true,
+
+//     // Style Options
+//     // "noImplicitReturns": true,
+//     // "noImplicitOverride": true,
+//     // "noUnusedLocals": true,
+//     // "noUnusedParameters": true,
+//     // "noFallthroughCasesInSwitch": true,
+//     // "noPropertyAccessFromIndexSignature": true,
+
+//     // Recommended Options
+//     "strict": true,
+//     "jsx": "react-jsx",
+//     "verbatimModuleSyntax": true,
+//     "isolatedModules": true,
+//     "noUncheckedSideEffectImports": true,
+//     "moduleDetection": "force",
+//     "skipLibCheck": true,
+//   }
+// }
+// {
+//   "compilerOptions": {
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext",
+//     "verbatimModuleSyntax": false,
+
+//     "target": "ESNext",
+//     "lib": ["ESNext"],
+//     "types": ["node"],
+
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+
+//     "strict": true,
+//     "isolatedModules": true,
+//     "noUncheckedSideEffectImports": true,
+//     "moduleDetection": "force",
+//     "skipLibCheck": true,
+
+//     "noEmit": true
+//   },
+//   "include": ["**/*.ts"]
+// }
+{
+  "compilerOptions": {
+    "target": "ES2020",                // Modern JS features
+    "module": "CommonJS",              // Works with Node + ts-node easily
+    "moduleResolution": "node",        // Resolves node_modules and local files
+    "outDir": "./dist",                // Where compiled JS goes if you compile
+    "rootDir": "./",                   // Root of your TS files
+    "esModuleInterop": true,           // Allows default import from commonjs (like express)
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                    // Enables strict type checking
+    "skipLibCheck": true,              // Skips type checks for node_modules
+    "sourceMap": true,                 // Useful for debugging
+    "isolatedModules": true            // Required for ts-node
+  },
+  "include": ["server.ts", "src/**/*"] // Include your main server and src folder
+}
