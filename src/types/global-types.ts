@@ -1,0 +1,11 @@
+import mongoose from "mongoose";
+import { UserRole } from "./user-types";
+
+
+export interface IJwtPayload {
+  id: mongoose.Types.ObjectId;         
+  role: UserRole;
+  email: string;
+}
+export const OnlyAdmin = [UserRole.ADMIN]
+export const OnlyUser = [UserRole.User]

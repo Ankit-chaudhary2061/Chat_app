@@ -1,4 +1,4 @@
-export const otpVerfication = (user:{username : string; eamil:string}, otp:string)=>{
+export const otpVerfication = (user:{username : string; email:string}, otp:string)=>{
 const html = `
   <div style="margin:0; padding:0; background-color:#f4f6fb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <table width="100%" cellpadding="0" cellspacing="0" style="padding:30px 0;">
