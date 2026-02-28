@@ -64,9 +64,18 @@ const userSchema = new mongoose.Schema(
       select: false
     },
 
-    otpExpires: {
-      type: Date
-    },
+   otpExpires: {
+  type: Date,
+  default: null
+},
+resetPasswordToken: {
+  type: String,
+  select: false, // hide by default
+},
+resetPasswordExpires: {
+  type: Date,
+  select: false,
+},
 
     bio: {
       type: String,
